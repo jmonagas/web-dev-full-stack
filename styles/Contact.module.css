@@ -1,0 +1,121 @@
+.articleIntro {
+  padding: 2rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+.img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.imgRadius {
+  border-radius: 10px;
+  background-color: #dfe5eb;
+}
+
+.articleSectionLeft {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2rem;
+  padding: 2rem;
+}
+
+.articleSectionRight {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2rem;
+  padding: 2rem;
+}
+
+.withBackgroundColor {
+  background-color: rgb(241, 241, 241);
+}
+
+.withoutBackgroundColor {
+  background-color: white;
+}
+
+.sectionImg {
+  padding: 2rem 1rem;
+}
+
+.sectionText {
+  padding: 2rem 1rem;
+  font-size: 17px;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto;
+  overflow: hidden;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  background-color: rgb(241, 241, 241);
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contactItem1, .contactItem2, .contactItem3, .contactItem4 {
+  border-radius: 10px;
+  width: 1fr;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.contactItem1:hover {
+  border: 2px solid #888188;
+}
+
+.contactItem2:hover {
+  border: 2px solid #888188;
+}
+
+.contactItem3:hover {
+  border: 2px solid #888188;
+}
+
+.contactItem4:hover {
+  border: 2px solid #888188;
+}
+
+.contactTitle {
+  padding: 1rem 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 999px) {
+  .articleSectionLeft, .articleSectionRight {
+    display: block;
+    padding: 2rem;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding: 30px;
+  }
+
+  .contactItem1, .contactItem2, .contactItem3, .contactItem4 {
+    margin: 10px;
+    padding: 10px;
+  }
+}
